@@ -6,76 +6,191 @@
   <title>Bhuvanershwari Dental Clinic</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans text-gray-800">
+<body class="font-sans text-white overflow-x-hidden bg-[#D9EEF2]">
 
   <!-- Navbar -->
-  <nav class="bg-blue-700 text-white">
-    <div class="hidden md:flex space-x-6">
-        <a href="#about" class="hover:text-gray-200">About</a>
-        <a href="#services" class="hover:text-gray-200">Services</a>
-        <a href="#contact" class="hover:text-gray-200">Contact</a>
+ <nav class="bg-[#4ECDC4] p-4 shadow-lg">
+  <div class="flex justify-between items-center">
+    <div class="text-[#D9EEF2] font-bold text-xl">BDC</div>
+    
+    <!-- Animated Hamburger -->
+    <div id="hamburger-toggle" class="block md:hidden cursor-pointer">
+      <div class="hamburger relative w-6 h-6">
+        <div class="hamburger-line w-6 h-0.5 bg-white rounded-full transition-all duration-300 
+                    before:content-[''] before:absolute before:w-6 before:h-0.5 before:bg-white 
+                    before:rounded-full before:transition-all before:duration-300 before:-translate-y-2
+                    after:content-[''] after:absolute after:w-6 after:h-0.5 after:bg-white 
+                    after:rounded-full after:transition-all after:duration-300 after:translate-y-2">
+        </div>
       </div>
     </div>
-  </nav>
+    
+    <!-- Desktop Navigation -->
+    <ul class="hidden md:flex space-x-6 text-[#D9EEF2]">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  
+  <!-- Mobile Menu with Slide Animation -->
+  <div id="mobile-menu" class="md:hidden overflow-hidden transition-all duration-300 max-h-0">
+    <ul class="pt-4 space-y-2">
+      <li><a href="#home" class="block text-[##D9EEF2] py-2 px-4 hover:bg-blue-600 rounded">Home</a></li>
+      <li><a href="#services" class="block text-[##D9EEF2] py-2 px-4 hover:bg-blue-600 rounded">Services</a></li>
+      <li><a href="#about" class="block text-[##D9EEF2] py-2 px-4 hover:bg-blue-600 rounded">About</a></li>
+      <li><a href="#contact" class="block text-[##D9EEF2] py-2 px-4 hover:bg-blue-600 rounded">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
 
   <!-- Hero -->
-  <header class="bg-gray-100 text-center py-16">
-  <h2 class="text-3xl md:text-4xl font-bold">Welcome to Shree Clinic</h2>
-  <p class="mt-2 text-lg text-gray-700">Compassionate healthcare in the heart of the city</p>
-  <p class="mt-1 text-md text-blue-600 font-semibold italic">Toothache? Take a date!</p>
+<header class="bg-[url('../Images/Background.jpg')] bg-cover bg-center bg-no-repeat min-h-screen text-center py-16">
+  <h2 class="text-3xl md:text-4xl font-bold text-[##D9EEF2]">Welcome to <br>Bhuvaneshwari Dental Clinic</h2>
+  <p class="mt-2 text-lg text-[#D9EEF2]">Designing beautiful, healthy smiles with kindness and expertise.</p>
+  <p class="mt-1 text-md text-[#FFF0D9] font-bold italic">For a smile that's worth your while.</p>
   <div class="mt-6 flex flex-col items-center space-y-4">
-  <a href="tel:+919876543210"
-     class="bg-green-600 text-white px-6 py-2 rounded shadow hover:bg-green-700 w-52 text-center flex items-center justify-center">
-    📞 Call Now
-  </a>
-  <a href="https://wa.me/919876543210" target="_blank"
-     class="border border-green-600 text-green-600 px-6 py-2 rounded hover:bg-green-600 hover:text-white w-52 text-center flex items-center justify-center">
-    💬 WhatsApp
-  </a>
-</div>
+    <a href="tel:+919876543210"
+      class="bg-[#FF6B6B] text-[#D9EEF2] px-6 py-2 rounded shadow hover:bg-[#4ECDC4] w-52 text-center flex items-center justify-center">
+      📞 Call Now
+    </a>
+    <a href="https://wa.me/919876543210" target="_blank"
+      class="border border-[#FF6B6B] text-[#D9EEF2] px-6 py-2 rounded hover:bg-[#4ECDC4] hover:text-white w-52 text-center flex items-center justify-center">
+      💬 WhatsApp
+    </a>
+  </div>
 
 </header>
 
 
-  <!-- About -->
-  <section id="about" class="container mx-auto py-12 px-6">
-    <h2 class="text-2xl font-semibold mb-4">About Us</h2>
-    <p class="text-gray-700 leading-relaxed">Bhuvanershwari Dental CLinic is dedicated to providing quality healthcare. Dr. Sharad Agarwal (BDS) and Dr. Sonia Gupta (BDS) has over 20 years of experience in the field.</p>
-  </section>
+<!-- About -->
+<section id="about" class="py-16 from-white to-blue-50">
+  <div class="max-w-screen-xl max-auto px-4 flex">
+    <h2 class="text-4xl text-[#333333] font-bold mb-4">About Us</h2>
+    <p class="text-lg text-[#333333] max-w-2xl mx-auto text-center flex align-center justify-center mt-20">
+      Your trusted partners in oral health, where compassionate care meets clinical excellence. 
+      With 20+ years of combined expertise, we're dedicated to creating personalized treatment experiences 
+      that prioritize your comfort while delivering exceptional results for every patient.
+    </p>
+  </div>
+  
+  <!-- Mission+images -->
+  <div class="pt-10 flex flex-row">
+    <div class="w-1/2 h-1/3">
+      <img src="../Images/Background.jpg" alt="" sizes="200px" srcset="">
+    </div>
+    <div class="w-1/2 h-1/3 pl-12">
+      <h3 class="text-2xl font-semibold text-[#333333] mb-4">Our Mission</h3>
+      <p class="text-[#333333] leading-relaxed mb-4">
+        To build lifelong relationships with our patients by delivering exceptional dental care...
+      </p>
+      <p class="text-[#333333] leading-relaxed">
+        Through continuous education, advanced technology...
+      </p>
+    </div>
+  </div>
 
-  <!-- Services -->
-  <section id="services" class="bg-gray-50 py-12 px-6">
-  <div class="container mx-auto">
-    <h3 class="text-2xl font-semibold mb-6">Our Dental Services in Saharanpur</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <!-- story+images -->
+  <div class="flex flex-row">
+    <div class="pt-20 w-1/2 h-1/3 pl-12">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Story</h3>
+      <p class="text-[#333333] leading-relaxed mb-4">
+        Bhuvaneshwari Dental Clinic was born from a shared vision...
+      </p>
+      <p class="text-[#333333] leading-relaxed mb-4">
+        Located in the heart of the city...
+      </p>
+      <p class="text-[#333333] leading-relaxed">
+        Today, with over two decades...
+      </p>
+    </div>
+    <div class="w-1/2 h-1/3">
+      <img src="../Images/Background.jpg" alt="" sizes="200px" srcset="">
+    </div>
+  </div>
+</section>
 
-      <div>
-        <h4 class="text-xl font-bold mb-2">General Dentistry</h4>
-        <ul class="list-disc pl-5 space-y-2">
-          <li>Dental Check-ups & X-rays</li>
-          <li>Tooth Extractions (Tooth Removal)</li>
-          <li>Fillings & Sealants</li>
-          <li>Teeth Cleaning & Polishing</li>
-        </ul>
+<!-- Services -->
+<section id="services" class="bg-gray-50 py-16 px-6 text-black">
+  <div class="container mx-auto max-w-6xl">
+    
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-blue-600 mb-4">Our Services</h2>
+      <p class="text-[#333333] max-w-2xl mx-auto">
+        Comprehensive dental care services designed to keep your smile healthy and beautiful
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Dental Care -->
+      <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+        <div class="w-32 h-32 rounded-full mx-auto mb-6 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><style>.cls-1{fill:#231f20}</style></defs><g id="dental_care" data-name="dental care"><path class="cls-1" d="M18 12a6 6 0 1 0 10.8-3.6 6.15 6.15 0 0 0-.68-.76 1 1 0 1 0-1.37 1.45 5.47 5.47 0 0 1 .45.51A4 4 0 1 1 24 8a.58.58 0 0 0 .18 0 .92.92 0 0 0 .67-.08 1 1 0 0 0 .42-1.35 6.74 6.74 0 0 0-2.8-2.82 5.37 5.37 0 0 0-1.2-.48 5.88 5.88 0 0 0-4.16.34l-.5.25a11.23 11.23 0 0 0-1.33.81 2.06 2.06 0 0 1-2.43 0 13.12 13.12 0 0 0-1.33-.81L11 3.57A5.93 5.93 0 0 0 5.09 4 7.14 7.14 0 0 0 2 10.38v.12a11.87 11.87 0 0 0 1 4.11 10.69 10.69 0 0 0 1 1.79 13.61 13.61 0 0 0 .1 6.21A13 13 0 0 0 7 28.1a2.75 2.75 0 0 0 1.11.74 2.64 2.64 0 0 0 2.46-.35 2.89 2.89 0 0 0 1.17-2.43c0-1.31.11-3.08 1.07-4.09a2 2 0 0 1 1.28-.77 2 2 0 0 1 1.29.77c1 1 1.11 2.78 1.07 4.09a2.89 2.89 0 0 0 1.17 2.43 2.64 2.64 0 0 0 1.55.51 2.55 2.55 0 0 0 .9-.16 2.68 2.68 0 0 0 1.11-.74 12.91 12.91 0 0 0 2.92-5.49 13.68 13.68 0 0 0 .4-2.55 1 1 0 0 0-2-.12 11.38 11.38 0 0 1-.34 2.18 11 11 0 0 1-2.46 4.64.83.83 0 0 1-.3.2.65.65 0 0 1-.61-.09.91.91 0 0 1-.34-.75c.07-2.45-.47-4.31-1.62-5.52a3.87 3.87 0 0 0-2.74-1.4 3.85 3.85 0 0 0-2.73 1.4c-1.15 1.21-1.7 3.07-1.62 5.52a.89.89 0 0 1-.35.75.65.65 0 0 1-.6.09.75.75 0 0 1-.3-.2A11 11 0 0 1 6 22.12a11.48 11.48 0 0 1 0-5.67 1 1 0 0 0-.16-.84 9.09 9.09 0 0 1-1-1.8A9.77 9.77 0 0 1 4 10.4H3l1-.15a5.18 5.18 0 0 1 2.2-4.54 4 4 0 0 1 4-.33l.41.21a9.83 9.83 0 0 1 1.12.68 4.07 4.07 0 0 0 4.73 0 9.83 9.83 0 0 1 1.12-.68l.42-.21a4 4 0 0 1 2.77-.23 4.94 4.94 0 0 1 .8.32 4.4 4.4 0 0 1 1 .72A6 6 0 0 0 18 12z"/><path class="cls-1" d="M24 15a1 1 0 0 0 1-1v-1h1a1 1 0 0 0 0-2h-1v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 1 1z"/></g></svg>
+        </div>
+        <h3 class="text-xl font-semibold text-blue-600 mb-4">DENTAL CARE</h3>
+        <p class="text-[#333333] text-sm leading-relaxed">
+          Comprehensive dental examinations, cleanings, and preventive treatments to maintain optimal oral health for all ages.
+        </p>
       </div>
 
-      <div>
-        <h4 class="text-xl font-bold mb-2">Restorative Dentistry</h4>
-        <ul class="list-disc pl-5 space-y-2">
-          <li>Root Canal Treatment (RCT)</li>
-          <li>Dental Implants</li>
-          <li>Dentures & Bridges</li>
-          <li>Crowns & Veneers</li>
-        </ul>
+      <!-- Oral Surgery -->
+      <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+        <div class="w-32 h-32 bg-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.cls-3{fill:#fff}.cls-4{fill:#afafaf}.cls-5{fill:#eb3c65}.cls-6{fill:#c13459}.cls-7{fill:#cecece}.cls-9{fill:#7e92f2}.cls-10{fill:#ffca57}.cls-11{fill:#ffdf9f}</style></defs><circle cx="256" cy="256" r="256" style="fill:#1fb7a2" id="BULINE"/><g id="Icons"><circle cx="238.97" cy="236.59" r="173.25" style="fill:#39eac8"/><path class="cls-3" d="M393.04 180.59h25v172.79h-25z"/><path class="cls-3" transform="rotate(-45 335.62 100.382)" d="M323.12 13.99h25v172.79h-25z"/><path class="cls-4" d="M244.42 318.97h22.6v35.52h-22.6z"/><path class="cls-5" d="M121.53 199.18s5.22-4 14.85-5a40.52 40.52 0 0 1 35.26 14.86l42.49 51.72a18.91 18.91 0 0 0 14.6 6.91h107.63a65.33 65.33 0 0 1 31.22 7.93l89 48.33a36.48 36.48 0 0 1 15.65 47.49h-12.71l-119.25-54.67-141.66-4.84-82.94-107.76z"/><path class="cls-6" d="M472.25 370.76h-12.73l-119.25-54.71-141.66-4.84-82.94-107.76 5.86-5a26.84 26.84 0 0 1 8.41-3.75l51 66.22a61.6 61.6 0 0 0 46.74 24l94.57 3.23a90.17 90.17 0 0 1 34.48 8.15l96.77 44.4a30.61 30.61 0 0 0 12.74 2.78h6.05c.28-.59.53-1.18.77-1.79a36.31 36.31 0 0 1-.81 29.07z"/><path class="cls-5" d="M86.11 94.57h22.24a21.34 21.34 0 0 1 21.34 21.34v36.91a43.59 43.59 0 0 1-43.59 43.59V94.57h.01z" transform="rotate(-37.41 107.906 145.487)"/><path class="cls-6" d="M134.8 182.48a43.52 43.52 0 0 1-13.26 16.7l-61.88-80.89 17.67-13.53a21.33 21.33 0 0 1 26 0 22.19 22.19 0 0 0-4.14 31.09z"/><path class="cls-3" d="m441.22 382.91-98.29-49.69A57.4 57.4 0 0 0 317 327H206.62a32.17 32.17 0 0 1-25.42-12.45L54.53 151.28a22.54 22.54 0 0 1 4-31.61l1.33-1 133.2 171.74a32.2 32.2 0 0 0 25.43 12.45h104.32a57.27 57.27 0 0 1 25.9 6.18l123.54 62.46-.76 1.5a22.52 22.52 0 0 1-30.27 9.91z"/><path class="cls-7" d="m472.25 371.47-.76 1.5a22.53 22.53 0 0 1-30.27 9.94l-98.29-49.69a57.39 57.39 0 0 0-25.9-6.17H206.62a32.18 32.18 0 0 1-25.42-12.46L54.53 151.28A22.51 22.51 0 0 1 51 130.22a22.51 22.51 0 0 0 3.53 6.54l126.67 163.3a32.18 32.18 0 0 0 25.42 12.46H317a57.39 57.39 0 0 1 25.9 6.17l98.29 49.69a22.5 22.5 0 0 0 22.48-1.23z"/><path class="cls-3" d="M229.88 354.49h51.66a10.69 10.69 0 0 1 10.69 10.69v41h-73v-41a10.69 10.69 0 0 1 10.65-10.69z"/><path class="cls-7" d="M292.24 388.39v17.75h-73.05v-41a10.7 10.7 0 0 1 10.69-10.69h14.33v.1a33.8 33.8 0 0 0 33.8 33.8zM204.46 406.15H307a24.21 24.21 0 0 1 24.21 24.21v6.46H180.25v-6.46a24.21 24.21 0 0 1 24.21-24.21z"/><path class="cls-4" d="M326.73 416.37h-94a24.24 24.24 0 0 0-23.93 20.45h-28.55v-6.46a24.21 24.21 0 0 1 24.21-24.22H307a24.17 24.17 0 0 1 19.73 10.23z"/><rect class="cls-3" x="160.07" y="436.82" width="191.3" height="24.21" rx="12.11"/><path class="cls-7" d="M227.16 228.37h23.61v39.35h-23.61z"/><path class="cls-4" d="M227.16 228.37h23.61v13.92h-23.61z"/><path class="cls-3" d="M211 207.18h92.62v8a13.17 13.17 0 0 1-13.17 13.17h-66.26A13.17 13.17 0 0 1 211 215.2v-8.02z"/><path class="cls-5" d="M224.19 189.62h66.29a13.17 13.17 0 0 1 13.17 13.17v4.39H211v-4.39a13.17 13.17 0 0 1 13.19-13.17z"/><circle cx="399.54" cy="170.31" r="25.5" style="fill:#3e4fc7"/><circle class="cls-9" cx="399.54" cy="170.31" r="16.17"/><path class="cls-7" d="M217.25 27.88h60.49a43 43 0 0 1 43 43H174.25a43 43 0 0 1 43-43z"/><path class="cls-4" d="M320.54 70.88H174.05A43 43 0 0 1 210 28.46l-.22.23c-10.27 11.13-2.16 29.19 13 29.19h95.8a43 43 0 0 1 1.96 13z"/><path class="cls-10" d="M180.35 80.47c0 7.12 9.16 12.9 20.46 12.9s20.46-5.78 20.46-12.9zM226.21 80.47c0 7.12 9.16 12.9 20.46 12.9s20.46-5.78 20.46-12.9zM273.31 80.47c0 7.12 9.16 12.9 20.46 12.9s20.46-5.78 20.46-12.9z"/><rect class="cls-9" x="168.04" y="70.88" width="158.5" height="10.5" rx="5.25"/><rect class="cls-11" x="238.97" y="108.09" width="11.8" height="50" rx="5.9"/><rect class="cls-11" x="295.6" y="100.36" width="11.8" height="50" rx="5.9" transform="rotate(-45 301.498 125.365)"/><rect class="cls-11" x="187.55" y="100.36" width="11.8" height="50" rx="5.9" transform="rotate(-135 193.453 125.363)"/><path d="M409.31 461a256.05 256.05 0 0 1-306.62 0z" style="fill:#3342ae"/></g></svg>
+        </div>
+        <h3 class="text-xl font-semibold text-blue-600 mb-4">ORAL SURGERY</h3>
+        <p class="text-[#333333] text-sm leading-relaxed">
+          Expert surgical procedures including tooth extractions, wisdom teeth removal, and advanced oral surgical treatments.
+        </p>
       </div>
 
-      <div>
-        <h4 class="text-xl font-bold mb-2">Cosmetic Dentistry</h4>
-        <ul class="list-disc pl-5 space-y-2">
-          <li>Bonding & Tooth Reshaping</li>
-          <li>Smile Makeover Treatments</li>
-          <li>Teeth Whitening</li>
-        </ul>
+      <!-- Implants -->
+      <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+        <div class="w-32 h-32 rounded-full mx-auto mb-6 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.cls-6{fill:#fff}.cls-7{fill:#dbdbdd}.cls-9{fill:#d1d2d3}.cls-11{fill:#567aaf}.cls-13{fill:#7aa9ed}.cls-14{fill:#719dd3}</style></defs><circle cx="256" cy="256" r="256" style="fill:#ffca57" id="BULINE"/><g id="Icons"><path d="M500.25 332.89A256.09 256.09 0 0 1 27.13 370.8a253.84 253.84 0 0 1-15.38-37.91z" style="fill:#f2bc88"/><path d="M4.51 261.33h501a185 185 0 0 1-185 185h-131a185 185 0 0 1-185-185z" style="fill:#e3a76d"/><path d="M512 256a254.75 254.75 0 0 1-26.59 113.73q-8.09.86-16.17 1.62-42 4-84 6.51-4.51.27-9 .5-35.84 2-71.76 2.78c-3.65.08-7.3.16-11 .22q-86.31 1.54-173-3.39-17.85-1-35.74-2.31-21.65-1.56-43.34-3.53-7.11-.63-14.23-1.33A254.62 254.62 0 0 1 0 256c0-3 .05-6 .16-9h511.68c.16 3 .16 6 .16 9z" style="fill:#ff79ab"/><path d="M17.88 288.56v-33.51h470.91v33.51a52.92 52.92 0 0 1-2.16 15.06l-.07.26c-.07.22-.14.45-.23.67a51.49 51.49 0 0 1-17.48 25.27A48.36 48.36 0 0 1 439.12 340h-18.38c-1.09 0-2.16-.05-3.22-.12-.27 0-.53 0-.79-.06-.87-.07-1.73-.16-2.6-.28-.2 0-.41-.05-.61-.09-1-.15-2.06-.34-3.08-.56l-.55-.14c-.83-.18-1.66-.4-2.49-.63l-.78-.24c-.92-.28-1.84-.59-2.74-.93a.49.49 0 0 1-.16-.05c-1-.35-1.89-.76-2.81-1.18l-.73-.34c-.72-.33-1.43-.69-2.14-1.07l-.65-.34c-.87-.49-1.74-1-2.58-1.53l-.46-.3c-.7-.46-1.38-.93-2.06-1.42l-.68-.51c-.71-.53-1.4-1.07-2.09-1.65l-.29-.23c-.76-.65-1.5-1.34-2.23-2l-.55-.56a53.72 53.72 0 0 1-1.66-1.71c-.16-.2-.34-.38-.52-.57-.66-.76-1.32-1.53-1.95-2.31l-.23-.31c-.55-.71-1.08-1.44-1.61-2.17-.15-.22-.3-.46-.46-.68-.49-.73-1-1.48-1.43-2.24l-.22-.37c-.54-.88-1-1.79-1.51-2.71l-.1-.21a52.77 52.77 0 0 1-5.7-23.95 52.92 52.92 0 0 1-2.17 15.06l-.07.26c-.07.22-.14.45-.22.67a51.57 51.57 0 0 1-17.49 25.27A48.33 48.33 0 0 1 321.4 340H303c-1.09 0-2.15-.05-3.22-.12-.27 0-.53 0-.79-.06-.87-.07-1.73-.16-2.59-.28-.2 0-.42-.05-.62-.09-1-.15-2.06-.34-3.07-.56l-.56-.14c-.83-.18-1.66-.4-2.49-.63l-.78-.24c-.92-.28-1.84-.59-2.74-.93a.49.49 0 0 1-.16-.05c-.95-.35-1.89-.76-2.81-1.18-.24-.11-.49-.22-.72-.34-.73-.33-1.43-.69-2.14-1.07l-.66-.34c-.87-.49-1.73-1-2.58-1.53l-.46-.3a68.7 68.7 0 0 1-2.06-1.42l-.68-.51c-.71-.53-1.4-1.07-2.08-1.65-.1-.07-.19-.16-.3-.23-.76-.65-1.5-1.34-2.22-2l-.56-.56a53.72 53.72 0 0 1-1.66-1.71c-.16-.2-.34-.38-.52-.57-.66-.76-1.32-1.53-2-2.31-.08-.1-.15-.21-.22-.31-.56-.71-1.09-1.44-1.61-2.17-.16-.22-.31-.46-.46-.68-.5-.73-1-1.48-1.44-2.24l-.22-.37c-.53-.88-1-1.79-1.5-2.71l-.11-.21a52.77 52.77 0 0 1-5.7-23.95 52.92 52.92 0 0 1-2.17 15.06l-.07.26c-.07.22-.14.45-.22.67a51.57 51.57 0 0 1-17.49 25.27 48.33 48.33 0 0 1-29.65 10.2h-18.39c-1.09 0-2.15-.05-3.22-.12-.27 0-.53 0-.79-.06-.86-.07-1.73-.16-2.59-.28-.2 0-.42-.05-.62-.09-1-.15-2.06-.34-3.07-.56l-.56-.14c-.83-.18-1.66-.4-2.48-.63l-.78-.24c-.93-.28-1.85-.59-2.75-.93a.38.38 0 0 1-.15-.05c-1-.35-1.9-.76-2.82-1.18l-.72-.34c-.72-.33-1.43-.69-2.14-1.07-.22-.11-.44-.22-.65-.34-.88-.49-1.74-1-2.58-1.53l-.46-.3c-.7-.46-1.39-.93-2.06-1.42l-.69-.51c-.71-.53-1.4-1.07-2.08-1.65-.1-.07-.19-.16-.3-.23-.76-.65-1.5-1.34-2.22-2l-.56-.56c-.57-.56-1.11-1.12-1.65-1.71-.17-.2-.35-.38-.53-.57-.66-.76-1.32-1.53-1.95-2.31-.08-.1-.15-.21-.22-.31-.56-.71-1.09-1.44-1.61-2.17-.16-.22-.31-.46-.46-.68-.5-.73-1-1.48-1.43-2.24l-.23-.37c-.53-.88-1-1.79-1.5-2.71 0-.07-.07-.15-.11-.21a52.77 52.77 0 0 1-5.7-23.95 52.92 52.92 0 0 1-2.17 15.06l-.07.26c-.07.22-.14.45-.22.67a51.5 51.5 0 0 1-17.49 25.27A48.31 48.31 0 0 1 85.94 340H67.55c-1.09 0-2.15-.05-3.22-.12-.27 0-.53 0-.79-.06-.86-.07-1.73-.16-2.59-.28-.2 0-.41-.05-.61-.09-1.05-.15-2.06-.34-3.08-.56l-.56-.14c-.83-.18-1.65-.4-2.48-.63l-.78-.24c-.93-.28-1.85-.59-2.75-.93a.44.44 0 0 1-.15-.05c-1-.35-1.89-.76-2.82-1.18l-.72-.34c-.72-.33-1.43-.69-2.14-1.07-.21-.11-.44-.22-.65-.34-.88-.49-1.74-1-2.58-1.53l-.46-.3c-.7-.46-1.39-.93-2.06-1.42l-.69-.51c-.71-.53-1.39-1.07-2.08-1.65-.09-.07-.19-.16-.3-.23-.75-.65-1.5-1.34-2.22-2l-.56-.56c-.56-.56-1.11-1.12-1.65-1.71-.17-.2-.35-.38-.52-.57-.67-.76-1.33-1.53-2-2.31-.08-.1-.15-.21-.22-.31-.56-.71-1.09-1.44-1.61-2.17l-.46-.68c-.5-.73-1-1.48-1.43-2.24l-.23-.37c-.53-.88-1-1.79-1.5-2.71 0-.07-.07-.15-.11-.21a52.64 52.64 0 0 1-5.65-23.93z" style="fill:#d36a95"/><path class="cls-6" d="M34.33 178.71h84.83a16.45 16.45 0 0 1 16.45 16.45v69a49.67 49.67 0 0 1-49.67 49.67H67.55a49.67 49.67 0 0 1-49.67-49.67v-69a16.45 16.45 0 0 1 16.45-16.45z"/><path class="cls-7" d="M129.92 287.31a49.53 49.53 0 0 1-14.54 2.17H97a49.67 49.67 0 0 1-49.67-49.67v-61.09h-13a16.44 16.44 0 0 0-16.45 16.44v69a49.67 49.67 0 0 0 49.67 49.67h18.39a49.65 49.65 0 0 0 43.98-26.52z"/><path class="cls-6" d="M269.79 178.71h84.83a16.45 16.45 0 0 1 16.45 16.45v69a49.67 49.67 0 0 1-49.67 49.67H303a49.67 49.67 0 0 1-49.67-49.67v-69a16.45 16.45 0 0 1 16.45-16.45z"/><path class="cls-7" d="M365.38 287.31a49.54 49.54 0 0 1-14.55 2.17h-18.39a49.66 49.66 0 0 1-49.67-49.67v-61.09h-13a16.43 16.43 0 0 0-16.44 16.44v69A49.66 49.66 0 0 0 303 313.87h18.4a49.67 49.67 0 0 0 43.98-26.56z"/><path class="cls-6" d="M387.51 178.71h84.83a16.45 16.45 0 0 1 16.45 16.45v69a49.67 49.67 0 0 1-49.67 49.67h-18.4a49.67 49.67 0 0 1-49.67-49.67v-69a16.45 16.45 0 0 1 16.45-16.45z"/><path class="cls-7" d="M483.1 287.31a49.48 49.48 0 0 1-14.54 2.17h-18.4a49.66 49.66 0 0 1-49.66-49.67v-61.09h-13a16.43 16.43 0 0 0-16.44 16.44v69a49.66 49.66 0 0 0 49.66 49.67h18.4a49.65 49.65 0 0 0 43.98-26.52z"/><path d="M150.33 255h89.33v25A44.67 44.67 0 0 1 195 324.69 44.67 44.67 0 0 1 150.33 280v-25z" style="fill:#eb3c65"/><ellipse class="cls-9" cx="195" cy="71.92" rx="27.32" ry="22.66"/><path class="cls-6" d="M267.18 102.23a60.4 60.4 0 0 1-6.8 28.24 62.54 62.54 0 0 0-4 10.08 14.36 14.36 0 0 1-13.65 10H147.3a14.36 14.36 0 0 1-13.65-10 62.54 62.54 0 0 0-4-10.08 60.38 60.38 0 0 1-6.8-28.23c0-28.57 18.78-51.72 42-51.72H166c.34 0 .67 0 1 .05l1 .08h.17c.66.06 1.31.14 1.95.25s1.32.22 2 .37l.57.12q.69.16 1.38.36l.68.19 1.36.44a35.83 35.83 0 0 1 5.43 2.39 28.37 28.37 0 0 0 27 0 35 35 0 0 1 16.74-4.29c23.12.04 41.9 23.19 41.9 51.75z"/><path class="cls-9" d="M260.26 130.7a63.86 63.86 0 0 0-3.91 9.85 14.35 14.35 0 0 1-13.65 10h-95.4a14.33 14.33 0 0 1-13.64-10 63.43 63.43 0 0 0-4-10.08 60.38 60.38 0 0 1-6.8-28.23c0-28.19 18.27-51.1 41-51.71A59.6 59.6 0 0 0 155 82.36a60.29 60.29 0 0 0 6.8 28.23 63.48 63.48 0 0 1 4 10.08 14.33 14.33 0 0 0 13.64 10z"/><path d="M246.45 167.57H143.27a6.79 6.79 0 0 1-6.52-4.9l-1.75-6.18a6.12 6.12 0 0 1 5.88-7.82h108a6.11 6.11 0 0 1 5.87 7.82l-1.75 6.18a6.78 6.78 0 0 1-6.55 4.9z" style="fill:#6891d7"/><path class="cls-11" d="m254.65 158.12-1.32 4.55a6.78 6.78 0 0 1-6.52 4.9H143.63a6.8 6.8 0 0 1-6.52-4.9l-1.79-6.18a6.12 6.12 0 0 1 5.88-7.82h9.2l1.32 4.55a6.77 6.77 0 0 0 6.52 4.9z"/><path class="cls-11" d="m162.48 167.57 7.16 84.78c.54 6.38 2.94 12.19 6.65 16.11L190 283a6.31 6.31 0 0 0 9.67 0l13.74-14.5c3.71-3.92 6.11-9.73 6.65-16.11l7.16-84.78z"/><path d="m227.24 167.57-1.43 17-.67 8-23.87-8h-16.88l.75 8.88 1.13 13.35 1.24 14.69 1.15 13.6 1.24 14.68 1.65 19.57a27.39 27.39 0 0 0 5.91 15.3A6.25 6.25 0 0 1 190 283l-13.74-14.5c-3.71-3.92-6.11-9.73-6.65-16.11l-.81-9.63-1.21-14.76-1.15-13.61-1.24-14.68-1.13-13.35-1.24-14.69-.35-4.14z" style="fill:#4d7099"/><path class="cls-11" d="m225.81 184.55-.67 7.97-23.87-7.97h24.54z"/><rect class="cls-13" x="150.07" y="181.87" width="84.15" height="13.54" rx="6.77" transform="rotate(18.47 192.12 188.612)"/><rect class="cls-13" x="150.07" y="209.11" width="84.15" height="13.54" rx="6.77" transform="rotate(18.47 192.13 215.85)"/><rect class="cls-13" x="150.07" y="236.6" width="84.15" height="13.54" rx="6.77" transform="rotate(18.47 192.119 243.346)"/><path class="cls-14" d="m184.39 184.55.75 8.88-21.07-7-7.55-2.53a6.77 6.77 0 1 1 4.28-12.9l2 .68 38.44 12.84zM187.51 221.47l-21.07-7-9.92-3.31a6.77 6.77 0 0 1 2.14-13.19 6.66 6.66 0 0 1 2.14.35l4.4 1.47 21.07 7zM189.9 249.75l-21.07-7-12.31-4.11a6.77 6.77 0 0 1 2.14-13.19 6.66 6.66 0 0 1 2.14.35l6.79 2.27 21.07 7z"/></g></svg>
+        </div>
+        <h3 class="text-xl font-semibold text-blue-600 mb-4">IMPLANTS</h3>
+        <p class="text-[#333333] text-sm leading-relaxed">
+          Permanent tooth replacement solutions using advanced dental implant technology for natural-looking results.
+        </p>
+      </div>
+
+      <!-- Crowns -->
+      <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+        <div class="w-36 h-36 rounded-full mx-auto mb-6 flex items-center justify-center">
+          <img src="../Images/noun-crown-dental-1661446.png" alt="">
+        </div>
+        <h3 class="text-xl font-semibold text-blue-600 mb-4">CROWNS</h3>
+        <p class="text-[#333333] text-sm leading-relaxed">
+          Custom-made dental crowns to restore damaged teeth, providing strength, durability, and natural appearance.
+        </p>
+      </div>
+
+      <!-- Emergency Care -->
+      <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+        <div class="w-32 h-32 rounded-full mx-auto mb-6 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.cls-6{fill:#4461b2}.cls-7{fill:#29327f}.cls-8{fill:#fff}</style></defs><circle cx="256" cy="256" r="256" style="fill:#1fb7a2" id="BULINE"/><g id="Icons"><circle cx="256" cy="255.17" r="182.52" style="fill:#39eac8"/><path d="M463.24 177.15a129.5 129.5 0 1 0-185.07 117l6 48.75a8.84 8.84 0 0 0 14.46 5.68l51.09-42.91a129.53 129.53 0 0 0 113.52-128.52z" style="fill:#eb3c65"/><path d="m315.36 310.26 2.64 21.38-20.17 16.94a8.84 8.84 0 0 1-14.45-5.69l-6-48.75a129.53 129.53 0 0 1 73.55-245.25A129.52 129.52 0 0 0 300.41 287a32.09 32.09 0 0 1 14.95 23.26z" style="fill:#c6385d"/><path d="M39 174.28s-47.54 188.11 173.36 305.5L224 421.46S86.27 363.87 89.58 219.63z" style="fill:#242e6b"/><path class="cls-6" d="M126 234a16.34 16.34 0 0 1-16 16.71l-6.48.15-16.87.4a46 46 0 0 1-47.05-44.9l-.61-26a46 46 0 0 1 44.93-47.07l19.63-.46 3.72-.09A16.33 16.33 0 0 1 124 148.69z"/><path class="cls-7" d="M126 235.61a16.34 16.34 0 0 1-15.91 15.13l-23.35.54a46 46 0 0 1-47.08-44.92l-.6-26a46 46 0 0 1 28.48-43.64 45.84 45.84 0 0 0-9 28.42l.61 26a46 46 0 0 0 47.07 44.93z"/><path class="cls-6" d="m274.05 446.21-4.27 5.13-11.92 14.31a49.84 49.84 0 0 1-70.19 6.4L166 454a49.83 49.83 0 0 1-6.39-70.19l12-14.45 4.15-5a17.69 17.69 0 0 1 24.91-2.27l71 59.18a17.68 17.68 0 0 1 2.38 24.94z"/><path class="cls-7" d="M273.07 422.42a17.7 17.7 0 0 1 1 23.76l-16.19 19.43a49.85 49.85 0 0 1-70.2 6.41l-21.64-18a49.89 49.89 0 0 1-15.3-54.33 49.64 49.64 0 0 0 16.78 27.59l21.64 18a49.83 49.83 0 0 0 70.19-6.39z"/><path class="cls-8" d="M126 234a16.34 16.34 0 0 1-16 16.71l-6.48.15V132.83l3.72-.09A16.33 16.33 0 0 1 124 148.69zM274.05 446.21l-4.27 5.13-98.1-82 4.15-5a17.69 17.69 0 0 1 24.91-2.27l71 59.18a17.68 17.68 0 0 1 2.31 24.96zM423.4 155.4c0-35.48-23.33-64.25-52.11-64.25a43.58 43.58 0 0 0-20.79 5.33 35.26 35.26 0 0 1-33.52 0 43.62 43.62 0 0 0-20.8-5.33c-28.78 0-52.11 28.77-52.11 64.25a75 75 0 0 0 8.45 35.07c10.55 19.91 17.57 41.49 19.7 63.92l.15 1.61c1.12 11.87 10.62 21.49 22.53 22.12a23.88 23.88 0 0 0 25.1-21.59l4-42.85a7 7 0 0 1 5.56-6.16h.09a20.7 20.7 0 0 1 8.15 0h.1a6.94 6.94 0 0 1 5.55 6.16l4 42.32c1.12 11.87 10.61 21.49 22.52 22.12a23.87 23.87 0 0 0 25.05-21.59l.21-2.14c2.12-22.43 9.14-44 19.69-63.92a74.91 74.91 0 0 0 8.48-35.07z"/><path d="M310.31 273.51a23.74 23.74 0 0 1-15.41 4.61c-11.91-.63-21.4-10.25-22.54-22.12l-.14-1.61c-2.12-22.43-9.14-44-19.7-63.91a75.09 75.09 0 0 1-8.45-35.07c0-35.49 23.33-64.26 52.11-64.26a42.9 42.9 0 0 1 14.05 2.37c-22 7.55-38.06 32.41-38.06 61.89a75.09 75.09 0 0 0 8.45 35.07c10.56 19.9 17.58 41.48 19.7 63.91l.15 1.61a24.75 24.75 0 0 0 9.84 17.51z" style="fill:#d1d2d3"/></g></svg>
+        </div>
+        <h3 class="text-xl font-semibold text-blue-600 mb-4">EMERGENCY CARE</h3>
+        <p class="text-[#333333] text-sm leading-relaxed">
+          Immediate dental care for urgent situations, providing prompt relief for dental pain and emergency treatments.
+        </p>
+      </div>
+
+      <!-- Extractions -->
+      <div class="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+        <div class="w-32 h-32 rounded-full mx-auto mb-6 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.cls-1{fill:#e3a76d}.cls-2{fill:#6bd1db}.cls-6{fill:#fff}.cls-7{fill:#dbdbdd}.cls-8{fill:#cc5089}.cls-9{fill:#74e1f3}</style></defs><circle class="cls-1" cx="256" cy="256" r="256" id="BULINE"/><g id="Icons"><path class="cls-2" d="m233.94 94.28-18.77 18.78-6 6-15.87-15.92-.23-.23-67.33-67.33a254.13 254.13 0 0 1 33-16.46l38.36 38.35 17.69 17.7.35.34z"/><path class="cls-2" d="M329.47 10.7 221.14 119l-6-6-18.75-18.72 18.78-18.77.34-.35 17.81-17.8 55.29-55.3a254.24 254.24 0 0 1 40.86 8.64z"/><path d="M485.77 369q-4.33 8.81-9.31 17.2-2.58 4.37-5.32 8.6a257.18 257.18 0 0 1-20.33 27.28q-7.76 9.1-16.34 17.46A256.18 256.18 0 0 1 26.23 369z" style="fill:#f2bc88"/><path class="cls-1" d="M430.34 385.6c14.37 2.72 28 5.8 40.8 9.2a257.18 257.18 0 0 1-20.33 27.28q-7.76 9.1-16.34 17.46A256.09 256.09 0 0 1 46 402.46q7.6-2.54 15.75-4.88A595.51 595.51 0 0 1 137 381.43q6.5-1 13.15-1.89c16.89-2.28 34.52-4.09 52.76-5.4q11.25-.81 22.8-1.34c14.92-.71 30.18-1.07 45.7-1.07h8.23q7.79.08 15.46.25 19.77.48 38.81 1.73a800.24 800.24 0 0 1 95.38 11.68z"/><path d="M486.49 367.51c-.23.5-.47 1-.72 1.49q-4.33 8.81-9.31 17.2-2.58 4.37-5.32 8.6a257.18 257.18 0 0 1-20.33 27.28q-7.76 9.1-16.34 17.46a255.8 255.8 0 0 1-109.41 63q-70.68 1.68-141.61-1a255 255 0 0 1-79-39.22A256.81 256.81 0 0 1 26.23 369c-.25-.5-.49-1-.72-1.49z" style="fill:#ff79ab"/><path d="M488 364.46c-.47 1-1 2-1.46 3.05-.23.5-.47 1-.72 1.49q-4.33 8.81-9.31 17.2-2.58 4.37-5.32 8.6a257.18 257.18 0 0 1-20.33 27.28q-7.76 9.1-16.34 17.46c-.51-.76-1-1.54-1.48-2.33-.08-.15-.18-.29-.27-.44-.63-1.06-1.22-2.15-1.79-3.25 0-.08-.08-.17-.13-.25a63.26 63.26 0 0 1-6.85-28.68 63.69 63.69 0 0 1-2.58 18l-.09.31c-.08.26-.17.54-.27.8A61.49 61.49 0 0 1 400.2 454a57.48 57.48 0 0 1-35.47 12.25h-22c-1.3 0-2.57-.06-3.84-.14L338 466c-1-.09-2.06-.19-3.09-.34a6.09 6.09 0 0 1-.73-.1c-1.25-.17-2.46-.41-3.68-.67l-.66-.17c-1-.22-2-.48-3-.76l-.93-.28c-1.1-.34-2.2-.7-3.27-1.11a1.39 1.39 0 0 1-.19-.06c-1.14-.43-2.26-.91-3.36-1.41l-.86-.41c-.86-.4-1.71-.83-2.56-1.28l-.77-.41c-1.05-.59-2.08-1.19-3.08-1.84l-.55-.35c-.84-.56-1.65-1.12-2.46-1.7l-.82-.62c-.85-.63-1.66-1.28-2.48-2-.12-.09-.23-.19-.36-.28-.9-.78-1.79-1.6-2.65-2.42l-.67-.66c-.67-.68-1.32-1.35-2-2.06-.2-.23-.41-.45-.62-.67-.8-.91-1.59-1.84-2.33-2.78a4.33 4.33 0 0 1-.27-.37c-.67-.85-1.3-1.71-1.92-2.6-.19-.26-.37-.54-.55-.8-.6-.88-1.16-1.78-1.71-2.69-.09-.15-.19-.29-.27-.44-.64-1.06-1.23-2.15-1.79-3.25-.05-.08-.09-.17-.13-.25a63.38 63.38 0 0 1-6.8-28.68 63.7 63.7 0 0 1-2.59 18 2.81 2.81 0 0 0-.08.31c-.09.26-.17.54-.27.8A61.61 61.61 0 0 1 259.69 454a57.53 57.53 0 0 1-35.48 12.25h-22c-1.3 0-2.57-.06-3.84-.14l-.94-.08c-1-.09-2.07-.19-3.1-.34a6.09 6.09 0 0 1-.73-.1 49.41 49.41 0 0 1-3.67-.67l-.67-.17c-1-.22-2-.48-3-.76l-.93-.28c-1.11-.34-2.21-.7-3.28-1.11a1 1 0 0 1-.18-.06 52.77 52.77 0 0 1-3.36-1.41l-.87-.41c-.86-.4-1.7-.83-2.55-1.28l-.78-.41c-1-.59-2.07-1.19-3.08-1.84l-.55-.35c-.83-.56-1.65-1.12-2.46-1.7-.26-.21-.55-.42-.81-.62-.85-.63-1.67-1.28-2.49-2l-.35-.28c-.91-.78-1.8-1.6-2.66-2.42l-.66-.66a97.89 97.89 0 0 1-2-2.06c-.2-.23-.41-.45-.62-.67-.79-.91-1.58-1.84-2.33-2.78-.1-.12-.18-.25-.27-.37-.66-.85-1.3-1.71-1.92-2.6l-.55-.8c-.59-.88-1.16-1.78-1.71-2.69-.08-.15-.18-.29-.27-.44a56.94 56.94 0 0 1-1.79-3.25l-.13-.25a63.26 63.26 0 0 1-6.66-28.66 63.34 63.34 0 0 1-2.59 18c0 .1 0 .2-.08.31s-.17.54-.27.8a61.61 61.61 0 0 1-20.89 30.3 58.4 58.4 0 0 1-14.7 8.36A256.81 256.81 0 0 1 26.23 369c-.25-.5-.49-1-.72-1.49-.5-1-1-2-1.46-3.05z" style="fill:#d36a95"/><path class="cls-6" d="M137.15 299v79c0 1.16 0 2.3-.11 3.44a56.45 56.45 0 0 1-6.4 23c0 .11-.11.22-.17.33-.49.92-1 1.82-1.54 2.7q-.24.41-.51.81c-.23.39-.48.77-.74 1.16s-.66 1-1 1.46c-.34.47-.68.94-1 1.41-.84 1.11-1.73 2.19-2.66 3.24-.32.37-.65.73-1 1.09-.79.85-1.59 1.67-2.43 2.46l-.69.65-1 .87c-.58.52-1.18 1-1.79 1.51-.41.34-.84.68-1.27 1s-1 .77-1.53 1.13l-.06.05c-.48.34-1 .67-1.45 1s-.8.53-1.21.78c-.24.16-.49.32-.74.46-.5.31-1 .61-1.52.89s-.93.53-1.4.77l-.21.11c-.53.29-1.07.56-1.61.82s-1 .46-1.44.67-.79.36-1.2.52-.77.33-1.17.48c-1.14.46-2.29.87-3.46 1.25-.48.16-1 .31-1.46.44-.78.24-1.56.45-2.35.64-.57.15-1.15.28-1.73.4s-1.25.26-1.88.37h-.06l-1.69.28-.85.11c-.46.07-.93.12-1.4.17s-.91.09-1.37.12a1.66 1.66 0 0 1-.32 0l-.75.05c-.52 0-1 .07-1.58.08h-9.61A256.84 256.84 0 0 1 26.23 369c-.25-.5-.49-1-.72-1.49-.5-1-1-2-1.46-3.05a254 254 0 0 1-21.12-69.63 18.8 18.8 0 0 1 18.34-14.65h97.06A18.81 18.81 0 0 1 137.15 299z"/><path class="cls-7" d="m130.64 404.42-.18.33c-.49.92-1 1.82-1.54 2.7q-.24.41-.51.81c-.23.39-.48.77-.74 1.16s-.66 1-1 1.46c-.34.47-.68.94-1 1.41-.84 1.11-1.73 2.19-2.66 3.24-.32.37-.65.73-1 1.09-.79.85-1.59 1.67-2.43 2.46l-.69.65-1 .87c-.58.52-1.18 1-1.79 1.51-.41.34-.84.68-1.27 1s-1 .77-1.53 1.13l-.06.05c-.48.34-1 .67-1.45 1s-.8.53-1.21.78c-.24.16-.49.32-.74.46-.5.31-1 .61-1.52.89s-.93.53-1.4.77l-.21.11c-.53.29-1.07.56-1.61.82s-1 .46-1.44.67-.79.36-1.2.52-.77.33-1.17.48c-1.14.46-2.29.87-3.46 1.25-.48.16-1 .31-1.46.44-.78.24-1.56.45-2.35.64-.57.15-1.15.28-1.73.4s-1.25.26-1.88.37h-.06l-1.69.28-.85.11c-.46.07-.93.12-1.4.17s-.91.09-1.37.12a1.66 1.66 0 0 1-.32 0l-.75.05c-.52 0-1 .07-1.58.08h-9.6A256.84 256.84 0 0 1 26.23 369c-.25-.5-.49-1-.72-1.49-.5-1-1-2-1.46-3.05a254 254 0 0 1-21.12-69.63 18.8 18.8 0 0 1 18.34-14.65h14.86v69.9A56.79 56.79 0 0 0 38 364.46c.26 1 .56 2.05.89 3.05.15.5.32 1 .5 1.49A56.83 56.83 0 0 0 93 406.9h21a56.66 56.66 0 0 0 16.63-2.48z"/><path class="cls-6" d="M314 280.18h97A18.82 18.82 0 0 1 429.83 299v79A56.82 56.82 0 0 1 373 434.81h-21A56.82 56.82 0 0 1 295.14 378v-79A18.82 18.82 0 0 1 314 280.18z"/><path class="cls-7" d="M423.32 404.42a56.73 56.73 0 0 1-16.64 2.48h-21a56.82 56.82 0 0 1-56.83-56.82v-69.9H314A18.81 18.81 0 0 0 295.14 299v79A56.82 56.82 0 0 0 352 434.81h21a56.79 56.79 0 0 0 50.32-30.39z"/><path class="cls-6" d="M510.87 280.18A254.45 254.45 0 0 1 488 364.46c-.47 1-1 2-1.46 3.05-.23.5-.47 1-.72 1.49q-4.33 8.81-9.31 17.2-2.58 4.37-5.32 8.6a257.18 257.18 0 0 1-20.33 27.28 56.78 56.78 0 0 1-21-44.09V299a18.81 18.81 0 0 1 18.82-18.81z"/><path class="cls-7" d="M466.74 369a56.69 56.69 0 0 0 9.72 17.2q-2.58 4.37-5.32 8.6a257.18 257.18 0 0 1-20.33 27.28 56.78 56.78 0 0 1-21-44.09V299a18.81 18.81 0 0 1 18.82-18.81h14.86v69.9a56.79 56.79 0 0 0 1.84 14.38c.26 1 .56 2.05.89 3.05.17.48.34.99.52 1.48z"/><path class="cls-6" d="M303.14 196.13c0-34.73-22.83-62.88-51-62.88a42.65 42.65 0 0 0-20.35 5.22 34.5 34.5 0 0 1-32.8 0 42.62 42.62 0 0 0-20.35-5.22c-28.16 0-51 28.15-51 62.88a73.4 73.4 0 0 0 8.27 34.32c10.33 19.48 17.2 80.48 19.28 102.42l.15 1.58c1.1 11.62 10.39 21 22 21.64A23.36 23.36 0 0 0 201.9 335l4-81.81a6.82 6.82 0 0 1 5.44-6h.09a20.22 20.22 0 0 1 8 0h.09a6.8 6.8 0 0 1 5.44 6l3.93 81.29c1.1 11.62 10.39 21 22 21.64A23.36 23.36 0 0 0 275.4 335l.2-2.1c2.08-21.94 8.94-82.94 19.27-102.42a73.4 73.4 0 0 0 8.27-34.35z"/><path class="cls-7" d="M192.5 351.57a23.27 23.27 0 0 1-15.11 4.52c-11.66-.61-20.95-10-22-21.64l-.15-1.57c-2.08-21.95-8.95-82.95-19.27-102.43a73.38 73.38 0 0 1-8.28-34.32c0-34.73 22.84-62.88 51-62.88a41.88 41.88 0 0 1 13.78 2.33c-21.47 7.42-37.26 31.71-37.26 60.55a73.37 73.37 0 0 0 8.27 34.32c10.33 19.48 17.2 80.48 19.28 102.43l.14 1.57a24.26 24.26 0 0 0 9.6 17.12z"/><path class="cls-8" d="M148 364.46h55.42l-2.52 52a23.31 23.31 0 0 1-9.4 16.54h-.05c-.48.36-1 .69-1.49 1l-.17.1c-.52.32-1 .61-1.58.89l-.13.06a23 23 0 0 1-3.53 1.42h-.09c-.59.18-1.2.33-1.81.47h-.18c-.61.13-1.23.23-1.85.31h-.17q-1 .12-1.95.15a20.63 20.63 0 0 1-2.08 0c-11.66-.61-20.95-10-22-21.65l-.15-1.57c-1.08-10.44-3.19-30.05-6.27-49.72zM280.78 364.46c-3.07 19.67-5.18 39.28-6.18 49.85l-.2 2.1a23.36 23.36 0 0 1-24.51 21.12c-11.66-.61-20.95-10-22-21.65l-2.49-51.42z"/><path class="cls-9" d="M241.51 66.13 314 90.37a29.7 29.7 0 0 1 20.28 28.17v75.12a22.87 22.87 0 0 1-10.77 19.4l-32.85 20.47a7.75 7.75 0 0 1-11.81-6.53v-59.9a24.48 24.48 0 0 0-11.47-20.74l-23.72-14.89z"/><path class="cls-2" d="M301.62 167.06v59.5l-11.17 7a7.73 7.73 0 0 1-11.83-6.56v-59.94a24.5 24.5 0 0 0-11.48-20.75l-23.71-14.88-2.16-65.3 23.26 7.77 1.9 57.53 23.71 14.88a24.5 24.5 0 0 1 11.48 20.75z"/><path class="cls-9" d="m194.28 66.13-72.52 24.24a29.69 29.69 0 0 0-20.28 28.17v75.12a22.87 22.87 0 0 0 10.77 19.4l32.85 20.47a7.75 7.75 0 0 0 11.84-6.53v-59.9a24.48 24.48 0 0 1 11.47-20.74l23.72-14.89z"/><path class="cls-2" d="M134.17 167.06v59.5l11.17 7a7.73 7.73 0 0 0 11.83-6.56v-59.94a24.5 24.5 0 0 1 11.48-20.75l23.71-14.88 2.16-65.3-23.26 7.77-1.9 57.53-23.71 14.88a24.5 24.5 0 0 0-11.48 20.75z"/><circle cx="215.39" cy="111.13" r="56.67" style="fill:#29327f"/><circle cx="215.39" cy="111.13" r="35.98" style="fill:#3342ae"/><path class="cls-6" d="M328.46 269.58a10 10 0 0 1-7.07-17.07l40.14-40.14a10 10 0 1 1 14.14 14.14l-40.14 40.14a9.93 9.93 0 0 1-7.07 2.93zM106.69 269.58a9.93 9.93 0 0 1-7.07-2.93l-40.14-40.14a10 10 0 1 1 14.14-14.14l40.14 40.14a10 10 0 0 1-7.07 17.07z"/></g></svg>
+        </div>
+        <h3 class="text-xl font-semibold text-blue-600 mb-4">EXTRACTIONS</h3>
+        <p class="text-[#333333] text-sm leading-relaxed">
+          Safe and comfortable tooth extraction procedures performed with modern techniques to minimize discomfort.
+        </p>
       </div>
 
     </div>
@@ -83,21 +198,70 @@
 </section>
 
 
-  <!-- Contact -->
-  <section id="contact" class="container mx-auto py-12 px-6">
-    <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
-    <p><b>Address:</b> First Floor, Kailash Tower, Court Rd, opp. Income Tax Office, Navin Nagar, Saharanpur, Uttar Pradesh 247001</p>
-    <p><b>Phone:</b> <a href="tel:+919997525462" class="text-blue-600">+91 9997525462</a></p>
-    <p><b>Email:</b> bdc.care4urteeth@gmail.com</p>
-    <div class="mt-6">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.024872887213!2d77.54466557562178!3d29.949963174971195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eeabba1c73337%3A0xae4d94f7d0a54b40!2sBhuvaneshwari%20Dental%20Clinic%20%7C%20Dr.%20Sharad%20%26%20Dr.%20Sonia%20Agarwal!5e0!3m2!1sen!2sin!4v1756126834448!5m2!1sen!2sin" width="750" height="450" style="border:0;" allowfullscreen="allow" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-600 text-white text-center py-4">
-    <p>&copy; 2025 Bhuvaneshawari Dental Clinic. All rights reserved.</p>
-  </footer>
+<!-- Contact -->
+<section id="contact" class="container mx-auto py-12 px-6">
+  <h3 class="text-2xl font-semibold mb-4 text-[#333333]">Contact Us</h3>
+  <p class="text-[#333333]"><b>Address:</b> First Floor, Kailash Tower, Court Rd, opp. Income Tax Office, Navin Nagar, Saharanpur, Uttar Pradesh 247001</p>
+  <p class="text-[#333333]"><b>Phone:</b> <a href="tel:+919997525462" class="text-blue-600">+91 9997525462</a></p>
+  <p class="text-[#333333]"><b>Email:</b> bdc.care4urteeth@gmail.com</p>
+  <div class="mt-6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.024872887213!2d77.54466557562178!3d29.949963174971195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eeabba1c73337%3A0xae4d94f7d0a54b40!2sBhuvaneshwari%20Dental%20Clinic%20%7C%20Dr.%20Sharad%20%26%20Dr.%20Sonia%20Agarwal!5e0!3m2!1sen!2sin!4v1756126834448!5m2!1sen!2sin" width="750" height="450" style="border:0;" allowfullscreen="allow" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
 
+<!-- Footer -->
+<footer class="bg-[#4ECDC4] text-white text-center py-4">
+  <p>&copy; 2025 Bhuvaneshawari Dental Clinic. All rights reserved.</p>
+</footer>
+
+
+<script>
+  const hamburgerToggle = document.getElementById('hamburger-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerLine = document.querySelector('.hamburger-line');
+
+  let isOpen = false;
+
+  hamburgerToggle.addEventListener('click', () => {
+    isOpen = !isOpen;
+
+    if(isOpen) {
+      mobileMenu.style.maxHeight = mobileMenu.scrollHeight+'px' // for slide-down menu
+      
+      // For ful-screen overlay
+      // mobileMenu.classList.remove('translate-x-full');
+
+      //Animate Hamburger to X
+      hamburgerLine.classList.add('bg-transparent');
+      hamburgerLine.classList.add('before:translate-y-0');
+      hamburgerLine.classList.add('after:translate-y-0');
+    }
+    else{
+      // close menu
+      mobileMenu.style.maxHeight = '0px';
+      
+      // For ful-screen overlay
+      // mobileMenu.classList.remove('translate-x-full');
+      
+      // Reset hamburger animation
+      hamburgerLine.classList.remove('bg-transparent');
+      hamburgerLine.classList.remove('before:translate-y-0');
+      hamburgerLine.classList.remove('after:translate-y-0');
+    }
+  })
+  
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () =>{
+      mobileMenu.style.maxHeight = '0px';
+      // mobileMenu.classList.add('translate-x-full');
+      isOpen = false;
+      // Reset hamburger animation
+      hamburgerLine.classList.remove('bg-transparent');
+      hamburgerLine.classList.remove('before:translate-y-0');
+      hamburgerLine.classList.remove('after:translate-y-0');
+    })
+  })
+</script>
 </body>
 </html>
